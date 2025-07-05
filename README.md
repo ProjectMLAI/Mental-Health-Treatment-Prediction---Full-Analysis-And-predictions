@@ -78,24 +78,4 @@ Key insights extracted:
 
 ---
 
-## 📊 Task 5: (Next) Feature Importance & Explainability
 
-* Will be used to interpret what variables are driving the predictions
-* Will explore visualizations like:
-
-  * Feature importance bar chart
-  * SHAP values (optional)
-  * Correlation heatmaps
-
----
-
-## 🚀 Final Summary:
-
-This project demonstrates a complete ML workflow:
-
-* Dirty survey data was cleaned and structured using domain logic
-* Meaningful insights were visualized through EDA
-* Model performance was excellent, with high F1 and recall scores
-* The pipeline is ready for model interpretation and even deployment
-
-🚀 You're now interview-ready for product-grade ML evaluation!
