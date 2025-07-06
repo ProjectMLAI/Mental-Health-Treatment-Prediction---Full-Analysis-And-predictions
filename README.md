@@ -108,7 +108,8 @@ This ML model was served through:
 
 > 💡 You can run this Streamlit app live (if deployed):
 ```
-https://mental-health-app-dc5eewgzdhggwuqjda83ss.streamlit.app/```
+https://mental-health-app-dc5eewgzdhggwuqjda83ss.streamlit.app/
+```
 
 ## 📁 Folder Structure
 
