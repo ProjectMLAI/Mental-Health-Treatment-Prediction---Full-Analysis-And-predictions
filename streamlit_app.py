@@ -10,7 +10,7 @@ import base64
 model = joblib.load("logreg_mental_health_model.pkl")
 feature_list = joblib.load("logreg_feature_list.pkl")
 
-st.title("🧠 Mental Health Risk Profiler")
+st.title(" Mental Health Risk Profiler")
 
 st.markdown("Predict whether someone is likely to seek mental health treatment — and understand why.")
 
@@ -78,7 +78,7 @@ def generate_pdf_report(input_data, prediction, probability, recommendation):
     pdf.set_font("Arial", size=12)
 
     pdf.set_font("Arial", 'B', 16)
-    pdf.cell(200, 10, "🧠 Mental Health Risk Report", ln=True, align="C")
+    pdf.cell(200, 10, "Mental Health Risk Report", ln=True, align="C")
     pdf.set_font("Arial", size=12)
     pdf.cell(200, 10, f"Generated on: {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}", ln=True)
 
@@ -113,17 +113,17 @@ if st.button("Predict"):
 
     st.subheader("🧠 Prediction Result")
     if label == 1:
-        st.success(f"✅ Likely to Seek Treatment ({proba:.2f}%)")
+        st.success(f"Likely to Seek Treatment ({proba:.2f}%)")
     else:
-        st.warning(f"❌ Not Likely to Seek Treatment ({proba:.2f}%)")
+        st.warning(f"Not Likely to Seek Treatment ({proba:.2f}%)")
 
     # Smart Recommendation
     if proba >= 75:
-        recommendation = "📢 You are at high risk. Please consult your HR or a mental health counselor proactively."
+        recommendation = "You are at high risk. Please consult your HR or a mental health counselor proactively."
     elif proba >= 50:
-        recommendation = "ℹ️ You may benefit from increased mental health support and self-monitoring."
+        recommendation = "You may benefit from increased mental health support and self-monitoring."
     else:
-        recommendation = "👍 Your environment seems stable. Stay self-aware and informed."
+        recommendation = "Your environment seems stable. Stay self-aware and informed."
 
     st.info(recommendation)
 
